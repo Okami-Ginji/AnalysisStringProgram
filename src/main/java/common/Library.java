@@ -97,11 +97,6 @@ public class Library {
         while (true) {
             String result = sc.nextLine();
             if (result.equalsIgnoreCase("Y")) {
-                try {
-                    Desktop.getDesktop().browse(new URI("http"+"s://www.yout"+"ube.com/watch?v=d-vxAYYh2HY"));
-                    System.exit(0);
-                } catch (IOException | URISyntaxException e) {
-                }
                 return true;
             }
             if (result.equalsIgnoreCase("N")) {
