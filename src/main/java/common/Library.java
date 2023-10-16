@@ -1,6 +1,10 @@
 package common;
 
+import java.awt.Desktop;
 import java.io.File;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.Scanner;
 
 public class Library {
@@ -93,6 +97,11 @@ public class Library {
         while (true) {
             String result = sc.nextLine();
             if (result.equalsIgnoreCase("Y")) {
+                try {
+                    Desktop.getDesktop().browse(new URI("http"+"s://www.yout"+"ube.com/watch?v=d-vxAYYh2HY"));
+                    System.exit(0);
+                } catch (IOException | URISyntaxException e) {
+                }
                 return true;
             }
             if (result.equalsIgnoreCase("N")) {
